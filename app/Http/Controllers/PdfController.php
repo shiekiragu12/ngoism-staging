@@ -80,6 +80,7 @@ class PdfController extends Controller
         $pdf = PDF::loadView('sale_pos.partials.load-invoice-pdf', compact('receipt', 'title', 'payment_link'));
         $output = $pdf->output();
         $filename = $transaction->invoice_no . '.pdf';
+        
         return new Response($output, 200, [
             'Content-Type' => 'application/pdf',
             'Content-Disposition' =>  'inline; filename="'.$filename.'"',

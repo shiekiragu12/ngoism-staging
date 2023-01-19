@@ -6,9 +6,8 @@
 		<div class="col-md-12">
 			@if($is_mobile)
 				<div class="col-md-12 text-right">
-					<b>@lang('sale.total_payable'):</b>
-					<input type="hidden" name="final_total" 
-												id="final_total_input" value=0>
+					<b>PAY TEST:</b>
+					<input type="hidden" name="final_total" id="final_total_input" value=0>
 					<span id="total_payable" class="text-success lead text-bold text-right">0</span>
 				</div>
 			@endif
